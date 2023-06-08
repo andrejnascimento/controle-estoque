@@ -6,8 +6,8 @@ public class AppEstoqueTeste extends AppEstoque{
     public static void main(String[]args) {
         Notebook n1 = new Notebook(455, "Teste1", "S1234");
 
-        n1.incluirEstoque(15);
-        n1.tirarEstoque(1);
-        n1.consultarEstoque();
+        n1.incluirEstoque(12);
+        n1.tirarEstoque(16);
+
     }
 }

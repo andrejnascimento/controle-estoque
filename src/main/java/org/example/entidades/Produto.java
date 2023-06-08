@@ -40,10 +40,12 @@ public class Produto {
 
     public void tirarEstoque(int quantidade){
 
-        if(estoque < quantidade) {
-            System.out.printf("Quantidade indisponível. Digite um valor até %d", quantidade);
-        } else
+
+        if(estoque >= quantidade) {
             estoque = estoque - quantidade;
+        } else
+            System.out.printf("Quantidade indisponível. Digite um valor até %d", this.estoque);
+
     }
 
     public void consultarEstoque(){
